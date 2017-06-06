@@ -20,7 +20,7 @@ public class HbaseDao {
         conf.set("hbase.rootdir", "hdfs://master:9000/hbase");
         // 设置Zookeeper,直接设置IP地址
         conf.set("hbase.zookeeper.property.clientPort", "2181");  
-        conf.set("hbase.zookeeper.quorum", "slave,slave2");
+        conf.set("hbase.zookeeper.quorum", "master,slave,slave2");
     }
 
     // 创建表
@@ -77,7 +77,8 @@ public class HbaseDao {
     public static void main(String[] args) throws Exception {
         //HbaseDao.createTable("testTb", "info");
         //HbaseDao.addRecord("testTb", "001", "info", "name", "zhangsan");
-        HbaseDao.addRecord("testTb", "001", "info", "age", "20");
-        //HbaseDao.deleteTable("testTb");
+        //HbaseDao.addRecord("testTb", "001", "info", "age", "20");
+        //HbaseDao.addRecord("testTb", "001", "info", "city2", "haidian");
+        HbaseDao.deleteTable("fu");
     }
 }
