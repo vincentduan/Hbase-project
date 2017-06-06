@@ -1,0 +1,191 @@
+/* 主要页面设置 */
+@font-face { 
+  font-family: lantinghei; 
+  src: url('兰亭黑 GBK.TTF'); 
+} 
+body{
+    margin:0px;
+    width:1920px;
+    height:1080px;
+}
+
+#main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    background:url(../image2/bg.jpg);
+    background-size:100% 100%;
+    font-family:'lantinghei';
+    color:white;
+}
+
+#nav{
+    position:absolute;
+    width:100%;
+    height:6%;
+    font-size:23px;
+    background:#2f3638;
+}
+
+#logo{
+    position:absolute;
+    left:3%;
+    top:25%;
+    width:10%;
+    height:50%;
+    background:url(../image2/logo.png);
+    background-size:100% 100%;
+}
+
+#title{
+    position:absolute;
+    left:9%;
+    width:30%;
+    top:10%;
+    height:80%;
+    line-height:45px;
+    color:#77BAF8;
+}
+#userpro{
+    position:absolute;
+    left:0%;
+    top:6%;
+    width:25%;
+    height:94%;
+    background:rgba(35,41,42,0.5);
+    border-right: 1px solid #4ebff9;
+}
+#userpropic{
+    position:absolute;
+    left:30%;
+    top:10%;
+    width:150px;
+    height:150px;
+    border: 1px solid #4ebff9;
+    border-radius: 50%;
+    background:url(../image2/avatar-mini.jpg);
+    background-size:100% 100%;
+}
+#sideMenu{
+    position:absolute;
+    left:10%;
+    top:30%;
+    width:90%;
+    height:70%;
+}
+#zhibiao{
+    position:absolute;
+    left:35%;
+    top:30%;
+    width:15%;
+    height:15%;
+    background:rgba(35,41,42,0.5);
+    border: 1px solid #4ebff9;
+    border-radius: 8px;
+}
+#yewu{
+    position:absolute;
+    left:55%;
+    top:30%;
+    width:15%;
+    height:15%;
+    background:rgba(35,41,42,0.5);
+    border: 1px solid #4ebff9;
+    border-radius: 8px;
+}
+#history{
+    position:absolute;
+    left:75%;
+    top:10%;
+    width:22%;
+    height:86%;
+    background:rgba(35,41,42,0.5);
+    border: 1px solid #4ebff9;
+    overflow:hidden;
+}
+#timeline_2{
+    position: absolute;
+    left:-70%;
+    top:5%;
+    width: 174%;
+    height: 91%;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+#tuijian{
+    position:absolute;
+    left:27%;
+    top:50%;
+    width:45%;
+    height:46%;
+    background:rgba(35,41,42,0.5);
+    border: 1px solid #4ebff9;
+}
+#indexMenutitle{
+    position:absolute;
+    top:5%;
+    left:6%;
+    width:50%;
+    height:6%;
+    color:#e9ecf1;
+    padding-left:15px;
+    font-size:24px;
+    line-height:25px;
+    border-left:3px solid #3bb4f2;
+}
+#indexMenutitle2{
+    position:absolute;
+    top:2%;
+    left:6%;
+    width:50%;
+    height:3%;
+    color:#e9ecf1;
+    padding-left:15px;
+    font-size:24px;
+    line-height:24px;
+    border-left:3px solid #3bb4f2;
+}
+#lefttuijian{
+    position:absolute;
+    top:11%;
+    left:5%;
+    width:40%;
+    height:84%;
+}
+#righttuijian{
+    position:absolute;
+    top:11%;
+    left:55%;
+    width:40%;
+    height:84%;
+}
+#line_zhuangshi{
+    position:absolute;
+    top:11%;
+    left:50%;
+    width:1%;
+    height:84%;
+    border-left: 1px solid #4ebff9;
+}
+.sign-title {
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top:70px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+.tuijiansubtitle{
+    font-size: 20px;
+    color: #44acf4;
+}
+.tuijianword{
+    font-size: 16px;
+    color: #fff;
+}
+.nLi{
+    padding:15px;
+}

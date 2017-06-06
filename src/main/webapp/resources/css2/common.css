@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/*左侧导航菜单    home*/
+.sideMenu{ border:0px solid #ddd; }
+.sideMenu h3{ height:32px; line-height:32px; padding-left:0px; background:rgba(43,92,160,0); cursor:pointer; font-family: 'Microsoft YaHei'; font-size: 15px; color:#e9ecf1;}
+.sideMenu ul {list-style:none;}
+.sideMenu ul .nLi.on .sub{ display: block;}
+.sideMenu ul .nLi .sub{ padding:8px 0;  display:none; }
+.sideMenu ul .nLi .sub li{ height: 30px; line-height: 30px; list-style: none;}
+.sideMenu ul .nLi .sub li a{ display: block; width: 100%; height: 100%; font-family: 'Microsoft YaHei'; font-size: 15px; text-decoration: none; padding:0 25px; box-sizing:border-box;color:#fff;}
+.sideMenu ul .nLi .sub li a:hover{ background:#E4E4E4;color:#282d2f;}
+/*左侧导航菜单    end*/
