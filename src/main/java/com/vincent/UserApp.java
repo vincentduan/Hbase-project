@@ -1,11 +1,12 @@
 package com.vincent;
 
-import java.util.List;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import cn.iie.ac.respo.UserRepository;
+import cn.iie.ac.service.impl.UserUtils;
 
 
 
@@ -23,9 +24,9 @@ public class UserApp {
 		userUtils.addUsers();
 
 		UserRepository userRepository = context.getBean(UserRepository.class);
-		List<User> users = userRepository.findAll();
+		/*List<User> users = userRepository.findAll();
 		System.out.println("Number of users = " + users.size());
-		System.out.println(users);
+		System.out.println(users);*/
 
 	}
 }

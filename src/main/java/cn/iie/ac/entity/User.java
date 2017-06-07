@@ -1,17 +1,19 @@
-package com.vincent;
+package cn.iie.ac.entity;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
 	private String name;
 	private String email;
 	private String password;
-
+	
 	public User(String name, String email, String password) {
 		super();
 		this.name = name;
 		this.email = email;
 		this.password = password;
 	}
-
+	
 	public String getName() {
 		return name;
 	}
@@ -29,5 +31,5 @@ public class User {
 		return "User [name=" + name + ", email=" + email + ", password="
 				+ password + "]";
 	}
-
+	
 }

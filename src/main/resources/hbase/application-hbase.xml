@@ -8,9 +8,10 @@
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 	http://www.springframework.org/schema/hadoop http://www.springframework.org/schema/hadoop/spring-hadoop.xsd">
 
-	<context:property-placeholder location="hbase.properties"/>
-
-	<context:component-scan base-package="org.springframework.samples.hadoop.hbase"/>
+	<!-- <context:property-placeholder location="hbase.properties"/> -->
+	
+	<!-- 组件扫描 dao,service  -->
+	<context:component-scan base-package="cn.iie.ac.respo,cn.iie.ac.service"/>
 	
 	<hdp:configuration id="hadoopConfiguration">
 	  fs.defaultFS=hdfs://master:9000

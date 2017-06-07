@@ -21,6 +21,20 @@
                       http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
   version="3.0"
   metadata-complete="true">
+  
+  
+  <!-- 配置Spring的用于初始化容器对象的监听器 -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+          <!--  注意我的application-hbase.xml  和下面的springmvc的配置文件都是放在src/main下的-->
+        <param-value>classpath:hbase/application-hbase.xml</param-value>
+    </context-param>
+  
+  
+  
   <!-- 配置DispatcherServlet -->
   <servlet>
   	<servlet-name>project-dispather</servlet-name>

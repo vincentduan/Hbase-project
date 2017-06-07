@@ -1,4 +1,4 @@
-package com.vincent;
+package cn.iie.ac.service.impl;
 
 import java.io.IOException;
 
@@ -13,6 +13,9 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.hadoop.hbase.HbaseTemplate;
 import org.springframework.stereotype.Component;
+
+import cn.iie.ac.respo.UserRepository;
+
 
 
 @Component
@@ -33,7 +36,7 @@ public class UserUtils implements InitializingBean {
 
 	public void initialize() throws IOException {
 
-		if (admin.tableExists(tableNameAsBytes)) {
+		/*if (admin.tableExists(tableNameAsBytes)) {
 			if (!admin.isTableDisabled(tableNameAsBytes)) {
 				System.out.printf("Disabling %s\n", tableName);
 				admin.disableTable(tableNameAsBytes);
@@ -48,14 +51,14 @@ public class UserUtils implements InitializingBean {
 		tableDescriptor.addFamily(columnDescriptor);
 
 		admin.createTable(tableDescriptor);
-
+*/
 	}
 
 	public void addUsers() {
-		for (int i = 0; i < 10; i++) {
+		/*for (int i = 0; i < 10; i++) {
 			userRepository.save("user" + i, "user" + i + "@yahoo.com",
 					"password" + i);
-		}
+		}*/
 	}
 
 	public void afterPropertiesSet() throws Exception {
